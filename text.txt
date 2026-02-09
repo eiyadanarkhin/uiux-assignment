@@ -1,0 +1,406 @@
+nav
+
+width: 1440;
+height: 88;
+justify-content: space-between;
+angle: 0 deg;
+opacity: 1;
+border-bottom-width: 1px;
+padding-top: 20px;
+padding-right: 32px;
+padding-bottom: 20px;
+padding-left: 32px;
+
+background: #FFFFFF;
+
+
+
+nav list
+
+font-family: Bahnschrift;
+font-weight: 300;
+font-style: Light;
+font-size: 18px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+
+background: #333333; a-textcolor
+
+EN
+
+font-family: Bahnschrift;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+
+background: #0E3178BF; text-color / background: hsla(220, 79%, 26%, 0.75);
+
+
+MM
+
+font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 13px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+
+background: var(--Primary-Text, #444444);
+
+login container
+width: 132;
+height: 38;
+angle: 0 deg;
+opacity: 1;
+gap: 10px;
+border-radius: 4px;
+border-width: 1px;
+padding-top: 8px;
+padding-right: 16px;
+padding-bottom: 8px;
+padding-left: 16px;
+
+background: var(--Secondary, #D71920);
+border: 1px solid var(--Secondary, #D71920)
+
+login txt
+
+font-family: Poppins;
+font-weight: 500;
+font-style: Medium;
+font-size: 15px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+
+background: var(--Surface, #FFFFFF); textcolor
+
+
+main section 1
+container all
+width: 1440;
+height: 616.8861083984375;
+top: 638px;
+angle: 0 deg;
+opacity: 1;
+padding-top: 40px;
+padding-right: 32px;
+padding-bottom: 40px;
+padding-left: 32px;
+gap: 10px;
+
+background: #F5F5F5;
+
+between cards gap
+width: 680;
+height: 536.8861083984375;
+angle: 0 deg;
+opacity: 1;
+gap: 16px;
+
+each cards
+
+width: 680;
+height: 260.44305419921875;
+angle: 0 deg;
+opacity: 1;
+gap: 24px;
+padding: 16px;
+border-radius: 8px;
+
+cards
+width: 680;
+height: 260.44305419921875;
+angle: 0 deg;
+opacity: 1;
+gap: 24px;
+padding: 16px;
+border-radius: 8px;
+
+background: #FFFFFF;
+-----------------------------------------------------------
+card-content
+
+width: 302;
+height: 194;
+angle: 0 deg;
+opacity: 1;
+gap: 20px;
+
+
+card heading     
+name -h5
+font-family: Poppins;
+font-weight: 500;
+font-style: Medium;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+
+background: #000000; text
+
+card-text (between line by line)
+width: 302;
+height: 100;
+angle: 0 deg;
+opacity: 1;
+gap: 10px;
+
+between icon and text
+width: 302;
+height: 20;
+angle: 0 deg;
+opacity: 1;
+gap: 12px;
+
+only text
+font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 13px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+
+background: var(--Primary-Text, #444444);textcolor
+
+see more
+
+font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 15px;
+leading-trim: NONE;
+line-height: 21px;
+letter-spacing: 0%;
+
+background: #00984A; textcolor
+
+see more arrow
+width: 5.872115612030029;
+height: 10.20256233215332;
+top: 7.93px;
+left: 9.08px;
+angle: 0 deg;
+opacity: 1;
+
+background: var(--Tertiary, #00984A); icon color
+
+final card - shorten loan button
+
+width: 81;
+height: 21;
+angle: 0 deg;
+opacity: 1;
+padding-top: 2px;
+padding-right: 4px;
+padding-bottom: 2px;
+padding-left: 4px;
+gap: 20px;
+border-radius: 4px;
+
+background: #DEE2FE; button bg color
+
+shorten text
+font-family: Poppins;
+font-weight: 500;
+font-style: Medium;
+font-size: 11px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+
+background: var(--Primary, #0E3178); textcolor
+
+
+main section 2
+
+container 
+width: 1440;
+height: 529.0078125;
+top: 1255px;
+angle: 0 deg;
+opacity: 1;
+padding :32px
+gap -40px
+background: linear-gradient(108.73deg, #F0F2FB 29.33%, #EFFBF5 94.67%); bgcolor
+
+Rates & Others heading 
+h2
+font-family: Poppins;
+font-weight: 500;
+font-style: Medium;
+font-size: 32px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+
+
+second container 
+gap-16
+------------------------------------------------------------------------------------------
+Currency Exchange Rate heading
+h3
+font-family: Poppins;
+font-weight: 500;
+font-style: Medium;
+font-size: 28px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: capitalize;
+
+-------gap 24----
+
+Last updated on ----      buy / sell
+font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 13px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+background: var(--Secondary-Text, #606060);text color
+ 
+9 May 2024,10:24 am ----  usd, mmk , number
+font-family: Poppins;
+font-weight: 500;
+font-style: Medium;
+font-size: 15px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+background: var(--Primary-Text, #444444); textcolor
+---------------------------------------------------------------------------------------------------
+----gap 32-----
+
+currency continer
+gap -32
+
+
+
+
+sec container left card
+
+width: 680;
+height: 377;
+angle: 0 deg;
+opacity: 1;
+gap: 32px;
+padding: 32px;
+border-radius: 12px;
+
+background: var(--Surface, #FFFFFF); bg color
+
+left card first container 
+gap 24px
+
+
+
+right card
+
+width: 216;
+height: 133;
+angle: 0 deg;
+opacity: 1;
+gap: 16px;
+padding: 16px;
+border-radius: 12px;
+
+background: #FFFFFF; bg color
+
+card text - open an account
+font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 15px;
+leading-trim: NONE;
+line-height: 21px;
+letter-spacing: 0%;
+text-align: center;
+
+background: var(--Primary-Text, #444444); textcolor
+
+
+footer
+
+background: #143B8A; bg color
+width: 1440;
+height: 305;
+angle: 0 deg;
+opacity: 1;
+padding-top: 30px;
+padding-right: 60px;
+padding-bottom: 30px;
+padding-left: 60px;
+gap: 32px;
+
+
+footer final 
+width: 1440;
+height: 61;
+angle: 0 deg;
+opacity: 1;
+padding-top: 20px;
+padding-right: 60px;
+padding-bottom: 20px;
+padding-left: 60px;
+gap: 16px;
+
+background: var(--Primary, #0E3178);
+
+
+header 
+
+font-family: Poppins;
+font-weight: 500;
+font-style: Medium;
+font-size: 18px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+
+background: var(--Surface, #FFFFFF);textcolor
+
+body text
+font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 15px;
+leading-trim: NONE;
+line-height: 21px;
+letter-spacing: 0%;
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

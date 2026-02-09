@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MTB Bank | Home Page</title>
+
+    <link rel="stylesheet" href="./src/output.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="flex items-center gap-4 lg:gap-16">
+        <img src="./images/logo/logo.png" alt="INNOVIX BANK Logo" class="h-8 md:h-auto"/>
+
+        <ul class="nav-list">
+          <li><a href="#">Banking</a></li>
+          <li><a href="#">Bancassurance</a></li>
+          <li><a href="#">Who we are</a></li>
+          <li><a href="#">Promotions</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </div>
+
+      <div class="flex items-center gap-0.5 lg:gap-6">
+        <div class="hidden md:flex justify-center items-center gap-2.5">
+          <span class="lang en">EN</span>
+          <span>|</span>
+          <span class="lang mm">MM</span>
+        </div>
+        <button class="flex">
+          <img src="./images/icon/search.svg" alt="search" class="w-20 h-20 p-0.5 lg:w-24 lg:h-24"/>
+        </button>
+        <button class="login-button">Login</button>
+        <img
+          src="./images/icon/mobile-menu.svg"
+          alt="mobile menu bar icon"
+          class="flex md:hidden cursor-pointer w-6 h-6"
+        />
+      </div>
+    </nav>
+
+    <!-- carousel section -->
+     <section class="w-full flex justify-center bg-gray-100">
+      <div
+        id="default-carousel"
+        class="relative w-full w-full h-[220px] sm:h-[320px] lg:h-[550px] overflow-hidden"
+        data-carousel="slide"
+        data-carousel-interval="5000"
+      >
+        <div class="relative h-full overflow-hidden">
+          <div class="hidden duration-[1500ms] ease-in-out" data-carousel-item>
+            <img
+              src="./images/img/Rectangle-1.jpg"
+              class="absolute block w-full h-full object-cover"
+              alt="Building"
+            />
+            <div class="absolute inset-0 flex items-center px-24 bg-black/5">
+              <h1 class="hidden lg:block text-6xl text-black font-bahnschrift">
+                Welcome to MTB
+              </h1>
+            </div>
+          </div>
+
+          <div class="hidden duration-[1500ms] ease-in-out" data-carousel-item>
+            <img
+              src="./images/img/Rectangle-2.jpg"
+              class="absolute block w-full h-full object-cover"
+              alt="Bridge"
+            />
+            <div class="absolute inset-0 flex items-center px-24 bg-black/5">
+              <h1 class="hidden lg:block text-6xl text-black font-bahnschrift">
+                Welcome to MTB
+              </h1>
+            </div>
+          </div>
+          <div class="hidden duration-[1500ms] ease-in-out" data-carousel-item>
+            <img
+              src="./images/img/Rectangle-3.jpg"
+              class="absolute block w-full h-full object-cover"
+              alt="Bridge"
+            />
+          </div>
+          <div class="hidden duration-[1500ms] ease-in-out" data-carousel-item>
+            <img
+              src="./images/img/Rectangle-4.jpg"
+              class="absolute block w-full h-full object-cover"
+              alt="Bridge"
+            />
+          </div>
+          <div class="hidden duration-[1500ms] ease-in-out" data-carousel-item>
+            <img
+              src="./images/img/Rectangle-5.jpg"
+              class="absolute block w-full h-full object-cover"
+              alt="Bridge"
+            />
+          </div>
+        </div>
+
+        <div
+          class="absolute z-30 flex flex-col -translate-y-1/2 right-10 top-1/2 space-y-4"
+        >
+          <button
+            type="button"
+            class="w-2 h-2 lg:w-3 lg:h-3 rounded-full border-2 border-white bg-white"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-2 h-2 lg:w-3 lg:h-3 rounded-full border-2 border-white bg-transparent hover:bg-white/50"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-2 h-2 lg:w-3 lg:h-3 rounded-full border-2 border-white bg-transparent hover:bg-white/50"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            class="w-2 h-2 lg:w-3 lg:h-3 rounded-full border-2 border-white bg-transparent hover:bg-white/50"
+            aria-current="false"
+            aria-label="Slide 4"
+            data-carousel-slide-to="3"
+          ></button>
+          <button
+            type="button"
+            class="w-2 h-2 lg:w-3 lg:h-3 rounded-full border-2 border-white bg-transparent hover:bg-white/50"
+            aria-current="false"
+            aria-label="Slide 5"
+            data-carousel-slide-to="4"
+          ></button>
+        </div>
+      </div>
+    </section>
+
+     
+
+    <main class="w-full min-h-screen">
+      <!-- section 1 -->
+      <section class="grid grid-cols-1 lg:grid-cols-2 bg-background px-8 py-10 gap-4">
+        <!-- left card -->
+        <div class="grid grid-cols-1 gap-4">
+          <div class="card-left">
+            <img
+              src="./images/img/saving.jpg"
+              alt="saving deposit"
+              class="card-img"
+            />
+            <div class="card-content">
+              <h5 class="card-heading">Saving Deposit</h5>
+              <div class="card-list">
+                <img
+                  src="./images/icon/lets-icons_check-ring-light.svg"
+                  class="card-list-check"
+                  alt="check"
+                />
+                <span class="card-list-text"
+                  >Earn interest on your daily balance.</span
+                >
+              </div>
+              <div class="card-list">
+                <img
+                  src="./images/icon/lets-icons_check-ring-light.svg"
+                  class="card-list-check"
+                  alt="check"
+                />
+                <span class="card-list-text"
+                  >Convenient & reliable for regular payments.</span
+                >
+              </div>
+              <div class="card-list">
+                <img
+                  src="./images/icon/lets-icons_check-ring-light.svg"
+                  class="card-list-check"
+                  alt="check"
+                />
+                <span class="card-list-text"
+                  >Can transfer money from account to account.</span
+                >
+              </div>
+
+              <div class="card-link">
+                <a href="#"> More Detail </a>
+                <img
+                  src="./images/icon/uil_angle-right-b.svg"
+                  class=""
+                  alt="angle right icon"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="card-left">
+            <img
+              src="./images/img/call-deposit.jpg"
+              alt="call deposit"
+              class="card-img"
+            />
+            <div class="card-content">
+              <h5 class="card-heading">Call Deposit</h5>
+              <div class="card-list">
+                <img
+                  src="./images/icon/lets-icons_check-ring-light.svg"
+                  class="card-list-check"
+                  alt="check"
+                />
+                <span class="card-list-text"
+                  >Earn interest on your daily balance.</span
+                >
+              </div>
+              <div class="card-list">
+                <img
+                  src="./images/icon/lets-icons_check-ring-light.svg"
+                  class="card-list-check"
+                  alt="check"
+                />
+                <span class="card-list-text"
+                  >Convenient & reliable for regular payments.</span
+                >
+              </div>
+              <div class="card-list">
+                <img
+                  src="./images/icon/lets-icons_check-ring-light.svg"
+                  class="card-list-check"
+                  alt="check"
+                />
+                <span class="card-list-text"
+                  >Can transfer money from account to account.</span
+                >
+              </div>
+
+              <div class="card-link">
+                <a href="#"> More Detail </a>
+                <img
+                  src="./images/icon/uil_angle-right-b.svg"
+                  class=""
+                  alt="angle right icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- right card -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="card-right">
+            <img
+              src="./images/img/debit-card.jpg"
+              alt="debit card"
+              class="card-img mb-4"
+            />
+            <div class="card-content">
+              <h5 class="card-heading">MTB MPU Debit Card</h5>
+              <div class="card-list">
+                <img
+                  src="./images/icon/lets-icons_check-ring-light.svg"
+                  class="card-list-check"
+                  alt="check"
+                />
+                <span class="card-list-text"
+                  >Earn compound interest on deposit.</span
+                >
+              </div>
+              <div class="card-list">
+                <img
+                  src="./images/icon/lets-icons_check-ring-light.svg"
+                  class="card-list-check"
+                  alt="check"
+                />
+                <span class="card-list-text"
+                  >Eligible for ATM/ debit Card, mobile banking.</span
+                >
+              </div>
+              <div class="card-list">
+                <img
+                  src="./images/icon/lets-icons_check-ring-light.svg"
+                  class="card-list-check"
+                  alt="check"
+                />
+                <span class="card-list-text"
+                  >Convenient and reliable for payments.</span
+                >
+              </div>
+
+              <div class="card-link">
+                <a href="#"> More Detail </a>
+                <img
+                  src="./images/icon/uil_angle-right-b.svg"
+                  class=""
+                  alt="angle right icon"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="card-right">
+            <img
+              src="./images/img/travel-laon.jpg"
+              alt="travel loan"
+              class="card-img mb-4"
+            />
+            <div class="card-content">
+              <h5 class="card-heading">Travel Loan</h5>
+              <span
+                class="bg-loan text-footer font-poppins font-medium text-[11px] px-1 py-0.5 rounded w-fit uppercase"
+                >Shorten Loan</span
+              >
+              <div class="space-y-3">
+                <div class="flex items-start gap-2">
+                  <img
+                    src="./images/icon/lets-icons_check-ring-light.svg"
+                    class="w-5 h-5 mt-1"
+                    alt="check"
+                  />
+                  <span class="text-gray-600 text-sm"
+                    >Earn compound interest on deposit.</span
+                  >
+                </div>
+                <div class="flex items-start gap-2">
+                  <img
+                    src="./images/icon/lets-icons_check-ring-light.svg"
+                    class="w-5 h-5 mt-1"
+                    alt="check"
+                  />
+                  <span class="text-gray-600 text-sm"
+                    >Eligible for ATM/ debit Card, mobile banking.</span
+                  >
+                </div>
+                <div class="flex items-start gap-2">
+                  <img
+                    src="./images/icon/lets-icons_check-ring-light.svg"
+                    class="w-5 h-5 mt-1"
+                    alt="check"
+                  />
+                  <span class="text-gray-600 text-sm"
+                    >Convenient and reliable for payments.</span
+                  >
+                </div>
+              </div>
+
+              <div class="card-link">
+                <a href="#"> More Detail </a>
+                <img
+                  src="./images/icon/uil_angle-right-b.svg"
+                  class=""
+                  alt="angle right icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 2 -->
+      <section class="bg-currency font-poppins p-8">
+        <h2 class="text-[30px] md:text-[32px] font-medium mb-10">Rates & Others</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-stretch">
+          <!-- left section -->
+          <div
+            class="lg:col-span-6 bg-white p-8 rounded-xl shadow-sm flex flex-col gap-6"
+          >
+            <h3 class="text-2xl md:text-[28px] font-medium">Currency Exchange Rate</h3>
+
+            <div class="flex flex-col md:flex-row justify-between ">
+              <span class="update-on">Last updated on</span>
+              <span class="update-time">9 May 2024, 10:24 am</span>
+            </div>
+
+             <!-- <div class="flex justify-between items-center">
+  
+              <div class="flex items-center gap-4">
+                <img src="./images/icon/usd.svg" class="country-icon" alt="USD" />
+                <span class="update-time">USD</span>
+              </div>
+         
+<div class="flex items-baseline gap-2">
+                <span class="update-on">Buy</span>
+                <span class="update-time">3,315 MMK</span>
+              </div>
+              <div class="flex items-baseline gap-2">
+                <span class="update-on">Sell</span>
+                <span class="update-time">3,315 MMK</span>
+              </div>
+           
+              
+                
+              
+              
+            </div> -->
+
+            
+
+            
+
+            
+  
+
+            <div class="grid grid-cols-12 items-center">
+              <div class="col-span-4 flex items-center gap-4">
+                <img src="./images/icon/usd.svg" class="country-icon" alt="USD" />
+                <span class="update-time">USD</span>
+              </div>
+              <div class="col-span-4 flex justify-center items-baseline gap-2">
+                <span class="update-on">Buy</span>
+                <span class="update-time">3,315 MMK</span>
+              </div>
+              <div class="col-span-4 flex justify-end items-baseline gap-2">
+                <span class="update-on">Sell</span>
+                <span class="update-time">3,315 MMK</span>
+              </div>
+            </div>
+            <div class="grid grid-cols-12 items-center">
+              <div class="col-span-4 flex items-center gap-4">
+                <img src="./images/icon/eur.svg" class="country-icon" alt="EUR" />
+                <span class="update-time">EUR</span>
+              </div>
+              <div class="col-span-4 flex justify-center items-baseline gap-2">
+                <span class="update-on">Buy</span>
+                <span class="update-time">3,315 MMK</span>
+              </div>
+              <div class="col-span-4 flex justify-end items-baseline gap-2">
+                <span class="update-on">Sell</span>
+                <span class="update-time">3,315 MMK</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-12 items-center">
+              <div class="col-span-4 flex items-center gap-4">
+                <img src="./images/icon/sgd.svg" class="country-icon" alt="SGD" />
+                <span class="update-time">SGD</span>
+              </div>
+              <div class="col-span-4 flex justify-center items-baseline gap-2">
+                <span class="update-on">Buy</span>
+                <span class="update-time">3,315 MMK</span>
+              </div>
+              <div class="col-span-4 flex justify-end items-baseline gap-2">
+                <span class="update-on">Sell</span>
+                <span class="update-time">3,315 MMK</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-12 items-center">
+              <div class="col-span-4 flex items-center gap-4">
+                <img
+                  src="./images/icon/thailand.svg"
+                  class="country-icon"
+                  alt="THB"
+                />
+                <span class="update-time">THB</span>
+              </div>
+              <div class="col-span-4 flex justify-center items-baseline gap-2">
+                <span class="update-on">Buy</span>
+                <span class="update-time">3,315 MMK</span>
+              </div>
+              <div class="col-span-4 flex justify-end items-baseline gap-2">
+                <span class="update-on">Sell</span>
+               <span class="update-time">3,315 MMK</span>
+              </div>
+            </div>
+          </div>
+<!-- 
+          <div class="lg:col-span-6 bg-white p-6 md:p-8 rounded-xl shadow-sm flex flex-col gap-6 w-full mx-auto">
+  <h3 class="text-2xl md:text-[28px] font-semibold">Currency Exchange Rate</h3>
+
+  <div class="flex flex-col md:flex-row md:justify-between gap-1">
+    <span class="text-gray-500 text-sm">Last updated on</span>
+    <span class="font-medium text-sm md:text-base">9 May 2024, 10:24 am</span>
+  </div>
+
+  <div class="flex flex-col gap-6 md:gap-8 mt-4">
+    
+    <div class="flex flex-col md:flex-row md:items-center gap-4">
+      
+      <div class="flex items-center gap-4 min-w-[120px]">
+        <img src="./images/icon/usd.svg" class="w-8 h-8 rounded-full" alt="USD" />
+        <span class="font-bold text-gray-700">USD</span>
+      </div>
+      
+      <div class="flex flex-col md:flex-row gap-4 md:gap-12 flex-grow">
+        <div class="flex justify-between md:justify-start items-center gap-3">
+          <span class="text-gray-400 text-sm">Buy</span>
+          <span class="font-semibold text-gray-700 whitespace-nowrap">3,315 MMK</span>
+        </div>
+        
+        <div class="flex justify-between md:justify-start items-center gap-3">
+          <span class="text-gray-400 text-sm">Sell</span>
+          <span class="font-semibold text-gray-700 whitespace-nowrap">3,324 MMK</span>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+</div> -->
+
+          <!-- right card -->
+           <div class="lg:col-span-6 flex flex-col h-full">
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-4 h-full">
+    
+    <div class="inform">
+      <img src="./images/icon/money-bag.svg" alt="Open Account" class="w-14 h-14" />
+      <p class="inform-text">Open an Account</p>
+    </div>
+
+    <div class="inform">
+      <img src="./images/icon/travel-agency.svg" alt="Get a Travel Loan" class="w-14 h-14" />
+      <p class="inform-text">Get a Travel Loan</p>
+    </div>
+
+    <div class="inform">
+      <img src="./images/icon/payment.svg" alt="Loan Calculator" class="w-14 h-14" />
+      <p class="inform-text">Loan Calculator</p>
+    </div>
+
+    <div class="inform">
+      <img src="./images/icon/credit-card.svg" alt="Apply MPU Card" class="w-14 h-14" />
+      <p class="inform-text">Apply MPU Card</p>
+    </div>
+
+    <div class="inform">
+      <img src="./images/icon/bank.svg" alt="Our Branches" class="w-14 h-14" />
+      <p class="inform-text">Our Branches</p>
+    </div>
+
+    <div class="inform">
+      <img src="./images/icon/contact-mail.svg" alt="Contact Us" class="w-14 h-14" />
+      <p class="inform-text">Contact Us</p>
+    </div>
+
+  </div>
+</div>
+
+          
+        
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#1a3a8a] text-white p py-5 px-5 lg:px-15 font-poppins">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-2 lg:gap-4">
+        <div class="col-span-12 md:col-span-4 space-y-4">
+          <h3 class="footer-heading">Contact Us</h3>
+          <div class="footer-content">
+            <div class="footer-contact">
+              <img src="./images/icon/line-md_email.svg" alt="line email" />
+              <p>info@innovix-bank.com</p>
+            </div>
+            <div class="footer-contact">
+              <img src="./images/icon/gg_pin.svg" alt="google pin" />
+              <p>Building 10, 5th Floor, MICT Park, Hlaing Township, Yangon.</p>
+            </div>
+            <div class="footer-contact">
+              <img src="./images/icon/phone.svg" alt="phone" />
+              <p>+959 123456789</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <img
+              src="./images/icon/facebook.svg"
+              alt="facebook icon"
+              class="social-icon"
+            />
+            <img
+              src="./images/icon/linked-in.svg"
+              alt="facebook icon"
+              class="social-icon"
+            />
+            <img
+              src="./images/icon/instagram.svg"
+              alt="facebook icon"
+              class="social-icon"
+            />
+            <img
+              src="./images/icon/viber.svg"
+              alt="facebook icon"
+              class="social-icon"
+            />
+          </div>
+        </div>
+
+        <div class="col-span-12 md:col-span-2 space-y-4">
+          <h3 class="footer-heading">Personal Banking</h3>
+          <ul class="footer-content">
+            <li class="footer-list hover:text-white cursor-pointer transition">
+              Deposit
+            </li>
+            <li class="hover:text-white cursor-pointer transition">
+              Loans and Advances
+            </li>
+            <li class="hover:text-white cursor-pointer transition">
+              Remittance
+            </li>
+            <li class="hover:text-white cursor-pointer transition">
+              Other Services
+            </li>
+            <li class="hover:text-white cursor-pointer transition">
+              Bill Payment
+            </li>
+            <li class="hover:text-white cursor-pointer transition">
+              Bancassurance
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-span-12 md:col-span-2 space-y-4">
+          <h3 class="footer-heading">Business Banking</h3>
+          <ul class="footer-content">
+            <li class="hover:text-white cursor-pointer transition">Deposit</li>
+            <li class="hover:text-white cursor-pointer transition">
+              Loans and Advances
+            </li>
+            <li class="hover:text-white cursor-pointer transition">
+              Trade Services
+            </li>
+            <li class="hover:text-white cursor-pointer transition">Treasury</li>
+            <li class="hover:text-white cursor-pointer transition">
+              Payroll Services
+            </li>
+            <li class="hover:text-white cursor-pointer transition">
+              Agent Banking
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-span-12 md:col-span-2 space-y-4">
+          <h3 class="footer-heading">About Us</h3>
+          <ul class="footer-content">
+            <li class="hover:text-white cursor-pointer transition">
+              About MTB Bank
+            </li>
+            <li class="hover:text-white cursor-pointer transition">
+              ATM & Branches
+            </li>
+            <li class="hover:text-white cursor-pointer transition">Careers</li>
+            <li class="hover:text-white cursor-pointer transition">News</li>
+          </ul>
+        </div>
+
+        <div class="col-span-12 md:col-span-2 space-y-4">
+          <h3 class="footer-heading">Useful Links</h3>
+          <ul class="footer-content">
+            <li class="hover:text-white cursor-pointer transition">
+              Contact Us
+            </li>
+            <li class="hover:text-white cursor-pointer transition">FAQs</li>
+          </ul>
+        </div>
+      </div>
+
+      
+      </div>
+    </footer>
+    <div
+        class="bg-[#1c3474] px-5 py-5 lg:px-15 lg:py-5 flex flex-col md:flex-row justify-center items-center gap-4 text-sm lg:text-lg text-white"
+      >
+        <p>© 2024 Myanma Tourism Bank. All Rights Reserved.</p>
+        <div class="flex">
+          <span class="hover:text-white cursor-pointer transition"
+            >Terms & Conditions</span
+          >
+          <span class="hover:text-white cursor-pointer transition"
+            >Privacy Policies</span
+          >
+        </div>
+  </body>
+</html>
