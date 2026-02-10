@@ -39,19 +39,17 @@
   --font-bahnschrift: "Bahnschrift", sans-serif;
   --font-poppins: "Poppins", sans-serif;
 
-  --color-surface: #FFFFFF;
-  --color-background: #F5F5F5;
+  --color-surface: #ffffff;
+  --color-background: #f5f5f5;
   --color-outline: #00000015;
-  --color-disabled: #A7A7A7;
+  --color-disabled: #a7a7a7;
 
   /* --color-primary: #d71920; */
   /* --color-secondary: #0e3178; */
   /* --color-tertiary: #00984a; */
-  
+
   /* --text-primary: #333333; */
   /* --text-secondary: #606060; */
-
-
 
   --color-white: #ffffff;
   --color-black: #000000;
@@ -59,9 +57,13 @@
   /* login button */
   --color-secondary: #d71920;
   --color-link: #00984a;
-  --color-loan: #DEE2FE;
+  --color-loan: #dee2fe;
   --color-body: #f5f5f5;
-  --background-image-currency: linear-gradient(108.73deg, #F0F2FB 29.33%, #EFFBF5 94.67%);
+  --background-image-currency: linear-gradient(
+    108.73deg,
+    #f0f2fb 29.33%,
+    #effbf5 94.67%
+  );
   --color-footer: #0e3178;
 
   /* text color */
@@ -71,103 +73,107 @@
   --color-update: #606060;
 }
 
-@utility nav {
-  @apply flex bg-white justify-between items-center px-4 lg:px-8 py-3 lg:py-5;
-}
+@layer components {
+  .nav {
+    @apply flex bg-white justify-between items-center px-4 lg:px-8 py-3 lg:py-5;
+  }
 
-@utility nav-list {
-  @apply hidden md:flex items-center font-bahnschrift font-light text-sm lg:text-lg text-nav gap-4 lg:gap-8 ;
-}
-@utility nav-list.active {
-  @apply flex flex-col absolute top-[60px] left-0 w-full bg-background p-5 shadow-md z-50;
-}
+  .nav-list {
+    @apply hidden md:flex items-center font-bahnschrift font-light text-sm lg:text-lg text-nav gap-4 lg:gap-8;
+  }
 
-@utility en {
-  @apply font-bahnschrift font-normal text-base text-en;
-}
+  .nav-list.active {
+    @apply flex !flex flex-col absolute top-[60px] left-0 w-full bg-white p-5 shadow-md z-50;
+  }
 
-@utility mm {
-  @apply font-poppins font-normal text-[13px] text-primary;
-}
+  .en {
+    @apply font-bahnschrift font-normal text-base text-en;
+  }
 
-@utility login-button {
-  @apply w-20 lg:w-33 bg-secondary font-poppins font-medium text-[15px] text-white rounded-sm px-4 py-2 hover:bg-[#c2171d] transition-colors;
-}
+  .mm {
+    @apply font-poppins font-normal text-[13px] text-primary;
+  }
 
-@utility card-left {
-  @apply bg-background rounded-lg shadow-sm p-4 flex flex-col sm:flex-row gap-6 hover:shadow-md transition-shadow;
-}
+  .login-button {
+    @apply w-20 lg:w-33 bg-secondary font-poppins font-medium text-[15px] text-white rounded-sm px-4 py-2 hover:bg-[#c2171d] transition-colors;
+  }
 
-@utility card-right {
-  @apply bg-background rounded-lg shadow-sm p-4 flex flex-col hover:shadow-md transition-shadow;
-}
+  .card-left {
+    @apply bg-background rounded-lg shadow-sm p-4 flex flex-col sm:flex-row gap-6 hover:shadow-md transition-shadow;
+  }
 
-@utility card-img {
-  @apply w-full h-48 md:w-80 md:h-48 object-cover;
-}
+  .card-right {
+    @apply bg-background rounded-lg shadow-sm p-4 flex flex-col hover:shadow-md transition-shadow;
+  }
 
-@utility card-content {
-  @apply flex flex-col gap-5;
-}
+  .card-img {
+    @apply w-full h-48 md:w-80 md:h-48 object-cover;
+  }
 
-@utility card-heading {
-  @apply font-poppins font-medium text-xl text-black;
-}
+  .card-content {
+    @apply flex flex-col gap-5;
+  }
 
-@utility card-list {
-  @apply flex items-start gap-3;
-}
+  .card-heading {
+    @apply font-poppins font-medium text-xl text-black;
+  }
 
-@utility card-list-check {
-  @apply w-5 h-5 mt-0.5 shrink-0;
-}
+  .card-list {
+    @apply flex items-center gap-3;
+  }
 
-@utility card-list-text {
-  @apply font-poppins font-normal text-[13px] text-primary leading-tight;
-}
+  .card-list-check {
+    @apply w-5 h-5 mt-0.5 shrink-0;
+  }
+  .card-list-text {
+    @apply font-poppins font-normal text-[13px] text-primary leading-tight;
+  }
 
-@utility card-link {
-  @apply flex items-center font-poppins font-normal text-[15px] text-link hover:underline;
-}
+  .card-link {
+    @apply flex items-center font-poppins font-normal text-[15px] text-link hover:underline;
+  }
 
-@utility update-on {
-  @apply font-normal text-[13px] text-update;
-}
+  .update-on {
+    @apply font-normal text-[13px] text-update;
+  }
 
-@utility update-time {
-  @apply  font-medium text-[14px] md:text-[15px] text-primary;
-}
+  .update-time {
+    @apply font-medium text-[14px] md:text-[15px] text-primary;
+  }
 
-@utility country-icon {
-  @apply w-8 h-8 md:w-10 md:h-10;
-}
+  .country-icon {
+    @apply w-8 h-8 md:w-10 md:h-10;
+  }
 
+  .inform {
+    @apply bg-white p-4 rounded-2xl flex flex-col  gap-4 items-center justify-center text-center shadow-sm hover:shadow-md hover:bg-[#0E31780D] transition-all h-full;
+  }
 
-@utility inform{
-  @apply  bg-white p-4 rounded-2xl flex flex-col  gap-4 items-center justify-center text-center shadow-sm hover:shadow-md transition-all h-full;
-}
+  .inform-text {
+    @apply font-poppins font-normal text-[15px] text-primary leading-tight;
+  }
 
-@utility inform-text {
-  @apply  font-poppins font-normal text-[15px] text-primary leading-tight;
-}
+  .footer-heading {
+    @apply text-lg font-medium;
+  }
 
-@utility buy-sell {
-  @apply col-span-4 flex justify-center items-baseline gap-2;
-}
+  .footer-content {
+    @apply space-y-2 text-sm lg:text-[15px] font-normal;
+  }
 
-@utility footer-heading {
-  @apply text-lg font-medium;
-}
+  .footer-contact {
+    @apply flex items-start gap-3;
+  }
 
-@utility footer-content {
-  @apply space-y-4 text-sm lg:text-[15px] font-normal;
-}
+  .footer-list {
+    @apply text-white hover:opacity-50 cursor-pointer transition;
+  }
 
-@utility footer-contact {
-  @apply   flex items-start gap-3;
-}
+  .social-link {
+    @apply w-12 h-12 rounded-full flex items-center justify-center border border-white hover:bg-white;
+  }
 
-
-@utility social-icon {
-  @apply flex items-center justify-center  hover:bg-white hover:text-blue-900 cursor-pointer transition;
+  /* .social-icon {
+    @apply w-6 h-6 object-contain;
+  } */
 }
