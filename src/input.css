@@ -78,8 +78,8 @@
 @utility nav-list {
   @apply hidden md:flex items-center font-bahnschrift font-light text-sm lg:text-lg text-nav gap-4 lg:gap-8 ;
 }
-.nav-list.active {
-  @apply flex flex-col absolute top-[60px] left-0 w-full bg-white p-5 shadow-md z-50;
+@utility nav-list.active {
+  @apply flex flex-col absolute top-[60px] left-0 w-full bg-background p-5 shadow-md z-50;
 }
 
 @utility en {
