@@ -74,6 +74,7 @@
 }
 
 @layer components {
+  
   .nav {
     @apply flex bg-white justify-between items-center px-4 lg:px-8 py-3 lg:py-5;
   }
@@ -83,7 +84,7 @@
   }
 
   .nav-list.active {
-    @apply flex !flex flex-col absolute top-[60px] left-0 w-full bg-white p-5 shadow-md z-50;
+    @apply flex flex-col absolute top-[60px] left-0 w-full bg-white p-5 shadow-md z-50;
   }
 
   .en {
@@ -154,7 +155,7 @@
   }
 
   .footer-heading {
-    @apply text-lg font-medium;
+    @apply text-lg font-medium mb-5;
   }
 
   .footer-content {
@@ -173,7 +174,4 @@
     @apply w-12 h-12 rounded-full flex items-center justify-center border border-white hover:bg-white;
   }
 
-  /* .social-icon {
-    @apply w-6 h-6 object-contain;
-  } */
 }

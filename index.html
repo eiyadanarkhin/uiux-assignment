@@ -86,96 +86,100 @@
     </nav>
 
     <!-- carousel section -->
-    <section class="w-full flex justify-center bg-gray-100">
+    <section class="lg:w-full flex justify-center bg-gray-100">
       <div
         id="default-carousel"
-        class="relative w-full h-[220px] sm:h-[320px] lg:h-[550px] overflow-hidden"
+        class="relative w-full md:h-[550px] overflow-hidden"
         data-carousel="slide"
         data-carousel-interval="5000"
       >
-        <div class="relative h-full overflow-hidden">
-          <div class="hidden duration-[1500ms] ease-in-out" data-carousel-item>
+        <div class="relative h-[180px] md:h-full overflow-hidden">
+          <div
+            class="hidden duration-2000 w-full h-[180px] lg:w-full lg:h-full ease-in-out"
+            data-carousel-item="active"
+          >
             <img
-              src="./images/img/Rectangle-1.jpg"
-              class="absolute block w-full h-full object-cover"
+              src="./images/img/building.jpg"
+              class="absolute block w-full h-[180px] md:w-full md:h-[550px] object-center"
               alt="Building"
             />
-            <div class="absolute inset-0 flex items-center px-24 bg-black/5">
-              <h1 class="hidden lg:block text-6xl text-black font-bahnschrift">
-                Welcome to MTB
-              </h1>
-            </div>
           </div>
-
-          <div class="hidden duration-[1500ms] ease-in-out" data-carousel-item>
+          <div
+            class="hidden duration-2000 ease-in-out w-full h-[180px] lg:w-full lg:h-full"
+            data-carousel-item
+          >
             <img
-              src="./images/img/Rectangle-2.jpg"
-              class="absolute block w-full h-full object-cover"
-              alt="Bridge"
-            />
-            <div class="absolute inset-0 flex items-center px-24 bg-black/5">
-              <h1 class="hidden lg:block text-6xl text-black font-bahnschrift">
-                Welcome to MTB
-              </h1>
-            </div>
-          </div>
-          <div class="hidden duration-[1500ms] ease-in-out" data-carousel-item>
-            <img
-              src="./images/img/Rectangle-3.jpg"
-              class="absolute block w-full h-full object-cover"
+              src="./images/img/bridge.jpg"
+              class="absolute block w-full h-[180px] md:w-full md:h-[550px] object-cover"
               alt="Bridge"
             />
           </div>
-          <div class="hidden duration-[1500ms] ease-in-out" data-carousel-item>
+          <div
+            class="hidden duration-2000 ease-in-out w-full h-[180px] lg:w-full lg:h-full"
+            data-carousel-item
+          >
             <img
-              src="./images/img/Rectangle-4.jpg"
-              class="absolute block w-full h-full object-cover"
-              alt="Bridge"
+              src="./images/img/mpu-card.jpg"
+              class="absolute block w-full h-[180px] md:w-full md:h-[550px] object-cover"
+              alt="MPU Debit Card"
             />
           </div>
-          <div class="hidden duration-[1500ms] ease-in-out" data-carousel-item>
+          <div
+            class="hidden duration-2000 ease-in-out w-full h-[180px] lg:w-full lg:h-full"
+            data-carousel-item
+          >
             <img
-              src="./images/img/Rectangle-5.jpg"
-              class="absolute block w-full h-full object-cover"
-              alt="Bridge"
+              src="./images/img/personal-loan.jpg"
+              class="absolute block w-full h-[180px] md:w-full md:h-[550px] object-cover"
+              alt="Personal Loan"
+            />
+          </div>
+          <div
+            class="hidden duration-2000 ease-in-out w-full h-[180px] lg:w-full lg:h-full"
+            data-carousel-item
+          >
+            <img
+              src="./images/img/mtb-bank.jpg"
+              class="absolute block w-full h-[180px] md:w-full md:h-[550px] object-cover"
+              alt="MTB"
             />
           </div>
         </div>
 
         <div
-          class="absolute z-30 flex flex-col -translate-y-1/2 right-10 top-1/2 space-y-4"
+          class="absolute z-30 flex flex-col items-center -translate-y-1/2 right-4 md:right-10 top-1/2 space-y-2.5"
         >
           <button
             type="button"
-            class="w-2 h-2 lg:w-3 lg:h-3 rounded-full border-2 border-white bg-white"
+            class="w-2 h-2 md:w-3 md:h-3 rounded-full border-2 border-white bg-white"
             aria-current="true"
             aria-label="Slide 1"
             data-carousel-slide-to="0"
           ></button>
           <button
             type="button"
-            class="w-2 h-2 lg:w-3 lg:h-3 rounded-full border-2 border-white bg-transparent hover:bg-white/50"
+            class="w-2 h-2 md:w-3 md:h-3 rounded-full border-2 border-white bg-transparent hover:bg-white/50"
             aria-current="false"
             aria-label="Slide 2"
             data-carousel-slide-to="1"
           ></button>
           <button
             type="button"
-            class="w-2 h-2 lg:w-3 lg:h-3 rounded-full border-2 border-white bg-transparent hover:bg-white/50"
+            class="w-2 h-2 md:w-3 md:h-3 rounded-full border-2 border-white bg-transparent hover:bg-white/50"
             aria-current="false"
             aria-label="Slide 3"
             data-carousel-slide-to="2"
           ></button>
           <button
             type="button"
-            class="w-2 h-2 lg:w-3 lg:h-3 rounded-full border-2 border-white bg-transparent hover:bg-white/50"
+            class="w-2 h-2 md:w-3 md:h-3 rounded-full border-2 border-white bg-transparent hover:bg-white/50"
             aria-current="false"
             aria-label="Slide 4"
             data-carousel-slide-to="3"
           ></button>
           <button
             type="button"
-            class="w-2 h-2 lg:w-3 lg:h-3 rounded-full border-2 border-white bg-transparent hover:bg-white/50"
+            class="w-2 h-2 md:w-3 md:h-3 rounded-full border-2 border-white bg-transparent hover:bg-white/50"
             aria-current="false"
             aria-label="Slide 5"
             data-carousel-slide-to="4"
@@ -664,8 +668,8 @@
       </section>
     </main>
 
-    <footer class="bg-[#0e3178] text-white p py-5 px-5 lg:px-15 font-poppins">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-2 lg:gap-4">
+    <footer class="bg-[#0e3178] text-white py-5 px-5 lg:px-15 font-poppins">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-2 lg:gap-4 mb-3 md:mb-0">
         <div class="col-span-12 md:col-span-4 space-y-4">
           <h3 class="footer-heading">Contact Us</h3>
           <div class="footer-content">
